@@ -55,9 +55,9 @@
     <repositories>
       <repository>
         <id>central</id>
-        <name>Maven Central</name>
+        <name>Red Hat</name>
         <layout>default</layout>
-        <url>https://repo1.maven.org/maven2</url>
+        <url>https://maven.repository.redhat.com/ga/</url>
         <snapshots>
         <enabled>false</enabled>
         </snapshots>
@@ -67,9 +67,9 @@
     <distributionManagement>
       <repository>
         <id>central</id>
-        <name>Maven Central</name>
+        <name>Red Hat</name>
         <layout>default</layout>
-        <url>https://repo1.maven.org/maven2</url>
+        <url>https://maven.repository.redhat.com/ga/</url>
         <snapshots>
         <enabled>false</enabled>
         </snapshots>
