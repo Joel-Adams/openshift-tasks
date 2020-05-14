@@ -37,6 +37,6 @@
   </profiles>
   <activeProfiles>
     <!--make the profile active all the time -->
-    <activeProfile>nexus</activeProfile>
+    <activeProfile>central</activeProfile>
   </activeProfiles>
 </settings>
