@@ -1,27 +1,20 @@
 <settings>
   <servers>
      <server>
-        <id>nexus</id>
-        <username>deployment</username>
-        <password>deployment123</password>
-     </server>
-     <server>
-        <id>nexus3</id>
-        <username>admin</username>
-        <password>admin123</password>
+        <id>central</id>
      </server>
   </servers>
   <mirrors>
     <mirror>
       <!--This sends everything else to /public -->
-      <id>nexus</id>
+      <id>central</id>
       <mirrorOf>*</mirrorOf>
-      <url>https://repo.maven.apache.org/maven2</url>
+      <url>https://repo1.maven.org/maven2</url>
     </mirror>
   </mirrors>
   <profiles>
     <profile>
-      <id>nexus</id>
+      <id>central</id>
       <!--Enable snapshots for the built in central repo to direct -->
       <!--all requests to nexus via the mirror -->
       <repositories>
