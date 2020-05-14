@@ -9,7 +9,7 @@
       <!--This sends everything else to /public -->
       <id>central</id>
       <mirrorOf>*</mirrorOf>
-      <url>https://repo1.maven.org/maven2</url>
+      <url>https://maven.repository.redhat.com/ga/</url>
     </mirror>
   </mirrors>
   <profiles>
