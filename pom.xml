@@ -69,14 +69,15 @@
 		</pluginRepository>
 	</pluginRepositories>
 	<distributionManagement>
-		<repository>
-			<id>nexus</id>
-			<url>http://nexus:8081/content/repositories/releases</url>
-		</repository>
-		<snapshotRepository>
-			<id>nexus</id>
-			<url>http://nexus:8081/content/repositories/snapshots</url>
-		</snapshotRepository>
+    <repository>
+      <id>central</id>
+      <name>Maven Central</name>
+      <layout>default</layout>
+      <url>https://repo1.maven.org/maven2</url>
+      <snapshots>
+      <enabled>false</enabled>
+      </snapshots>
+    </repository>
 	</distributionManagement>
 	<dependencyManagement>
 		<dependencies>
@@ -325,18 +326,17 @@
 			</build>
 		</profile>
 		<profile>
-			<id>nexus3</id>
+			<id>central</id>
 			<distributionManagement>
-				<repository>
-					<id>nexus3</id>
-					<name>Releases</name>
-					<url>http://nexus:8081/repository/maven-releases</url>
-				</repository>
-				<snapshotRepository>
-					<id>nexus3</id>
-					<name>Snapshot</name>
-					<url>http://nexus:8081/repository/maven-snapshots</url>
-				</snapshotRepository>
+        <repository>
+          <id>central</id>
+          <name>Maven Central</name>
+          <layout>default</layout>
+          <url>https://repo1.maven.org/maven2</url>
+          <snapshots>
+          <enabled>false</enabled>
+          </snapshots>
+        </repository>
 			</distributionManagement>
 		</profile>
 		<profile>
