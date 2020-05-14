@@ -59,7 +59,7 @@
         <layout>default</layout>
         <url>https://maven.repository.redhat.com/ga/</url>
         <snapshots>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
         </snapshots>
       </repository>
     </repositories>
@@ -71,7 +71,7 @@
         <layout>default</layout>
         <url>https://maven.repository.redhat.com/ga/</url>
         <snapshots>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
         </snapshots>
       </repository>
     </distributionManagement>
