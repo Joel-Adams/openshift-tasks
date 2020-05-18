@@ -14,17 +14,16 @@
   <mirrors>
     <mirror>
       <!--This sends everything else to /public -->
-      <id>central-redhat</id>
-      <mirrorOf>*</mirrorOf>
-      <url>https://maven.repository.redhat.com/ga/</url>
-    </mirror>
-    <mirror>
-      <!--This sends everything else to /public -->
       <id>central-maven</id>
       <mirrorOf>*</mirrorOf>
       <url>https://repo1.maven.org/maven2/</url>
     </mirror>
-
+    <mirror>
+      <!--This sends everything else to /public -->
+      <id>central-redhat</id>
+      <mirrorOf>*</mirrorOf>
+      <url>https://maven.repository.redhat.com/ga/</url>
+    </mirror>
   </mirrors>
   <profiles>
     <profile>
@@ -33,16 +32,28 @@
       <!--all requests to central via the mirror -->
       <repositories>
         <repository>
-          <id>central</id>
-          <url>http://central</url>
+          <id>central-maven</id>
+          <url>https://repo1.maven.org/maven2/</url>
+          <releases><enabled>true</enabled></releases>
+          <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+        <repository>
+          <id>central-redhat</id>
+          <url>https://maven.repository.redhat.com/ga/</url>
           <releases><enabled>true</enabled></releases>
           <snapshots><enabled>true</enabled></snapshots>
         </repository>
       </repositories>
      <pluginRepositories>
         <pluginRepository>
-          <id>central</id>
-          <url>http://central</url>
+          <id>central-maven</id>
+          <url>https://repo1.maven.org/maven2/</url>
+          <releases><enabled>true</enabled></releases>
+          <snapshots><enabled>true</enabled></snapshots>
+        </pluginRepository>
+        <pluginRepository>
+          <id>central-redhat</id>
+          <url>https://maven.repository.redhat.com/ga/</url>
           <releases><enabled>true</enabled></releases>
           <snapshots><enabled>true</enabled></snapshots>
         </pluginRepository>
