@@ -82,14 +82,14 @@
 		<dependencies>
 			<dependency>
 				<groupId>org.jboss.bom</groupId>
-				<artifactId>jboss-eap-javaee7</artifactId>
+				<artifactId>jboss-eap-javaee8</artifactId>
 				<version>${version.jboss.bom.eap}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.bom</groupId>
-				<artifactId>jboss-eap-javaee7-with-tools</artifactId>
+				<artifactId>jboss-eap-javaee8-with-tools</artifactId>
 				<version>${version.jboss.bom.eap}</version>
 				<type>pom</type>
 				<scope>import</scope>
