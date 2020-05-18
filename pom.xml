@@ -57,7 +57,7 @@
 		</repository>
     <repository>
       <id>maven-repository</id>
-      <url>https://repo1.maven.org/maven2//</url>
+      <url>https://repo1.maven.org/maven2/</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -79,7 +79,7 @@
 		</pluginRepository>
     <pluginRepository>
       <id>maven-repository</id>
-      <url>https://repo1.maven.org/maven2//</url>
+      <url>https://repo1.maven.org/maven2/</url>
       <releases>
         <enabled>true</enabled>
       </releases>
