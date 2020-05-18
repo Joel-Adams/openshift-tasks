@@ -12,6 +12,7 @@
      </server>
   </servers>
   <mirrors>
+    <mirror>
       <!--This sends everything else to /public -->
       <id>central-redhat</id>
       <mirrorOf>*</mirrorOf>
@@ -24,6 +25,7 @@
       <!--Enable snapshots for the built in central repo to direct -->
       <!--all requests to central via the mirror -->
       <repositories>
+        <repository>
           <id>central-redhat</id>
           <url>https://maven.repository.redhat.com/ga/</url>
           <releases><enabled>true</enabled></releases>
