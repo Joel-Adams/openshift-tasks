@@ -2,6 +2,13 @@
   <servers>
      <server>
         <id>central</id>
+        <username>deployment</username>
+        <password>deployment123</password>
+     </server>
+     <server>
+        <id>central</id>
+        <username>admin</username>
+        <password>admin123</password>
      </server>
   </servers>
   <mirrors>
@@ -9,14 +16,14 @@
       <!--This sends everything else to /public -->
       <id>central</id>
       <mirrorOf>*</mirrorOf>
-      <url>https://repo1.maven.org/maven2</url>
+      <url>https://maven.repository.redhat.com/ga/</url>
     </mirror>
   </mirrors>
   <profiles>
     <profile>
       <id>central</id>
       <!--Enable snapshots for the built in central repo to direct -->
-      <!--all requests to nexus via the mirror -->
+      <!--all requests to central via the mirror -->
       <repositories>
         <repository>
           <id>central</id>
